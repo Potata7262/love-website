@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Gift for You ♡</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #fff2f7;
+      color: #914b68;
+      text-align: center;
+    }
+
+    header {
+      padding: 65px 20px 45px;
+      background: #ffd6e7;
+      border-radius: 0 0 35px 35px;
+    }
+
+    h1 { font-size: 2.4rem; }
+    h2 { color: #c45c86; }
+
+    button {
+      background: #e989ae;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      padding: 13px 22px;
+      margin: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover { background: #cf6792; }
+
+    section {
+      max-width: 650px;
+      margin: 30px auto;
+      padding: 25px 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      margin: 12px 0;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px #e7afc322;
+    }
+
+    #letter { display: none; }
+    #reasons { display: none; }
+
+    footer { padding: 25px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>♡ a little place for you ♡</h1>
+    <p>I made something tiny and special just for you.</p>
+    <button onclick="document.getElementById('gift').scrollIntoView({behavior:'smooth'})">
+      Open your gift 💌
+    </button>
+  </header>
+
+  <section id="gift">
+    <h2>a little letter for you 💗</h2>
+    <div class="card">
+      <p>There's something I want you to know...</p>
+      <button onclick="document.getElementById('letter').style.display='block'; this.style.display='none'">
+        Open my letter ♡
+      </button>
+      <div id="letter">
+        <p>My love,</p>
+        <p>
+          I made this little website because I wanted
+          to give you something special. You mean so
+          much to me, and I hope this reminds you how
+          appreciated and loved you are.
+        </p>
+        <p>Thank you for being you. ♡</p>
+        <p>Love, your favorite person 💕</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>reasons i love you ♡</h2>
+    <p>Here's a little collection of reasons you're special to me.</p>
+    <button onclick="document.getElementById('reasons').style.display='block'">
+      Reveal the reasons 💗
+    </button>
+    <div id="reasons">
+      <div class="card">01. You make me smile. ♡</div>
+      <div class="card">02. I love talking to you.</div>
+      <div class="card">03. You make ordinary days special.</div>
+      <div class="card">04. I love your sense of humor.</div>
+      <div class="card">05. You are someone I appreciate so much.</div>
+    </div>
+  </section>
+
+  <footer>
+    made with lots of love ♡<br>
+    and maybe a few too many hearts 💗
+  </footer>
+
+</body>
+</html>
